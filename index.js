@@ -48,11 +48,12 @@ game.prototype={
                 'font-weight':'bold',
                 opacity:0,
                 cursor:'pointer',
+                'transition':'0.5s',
                 animation:"divs 0.3s ease "+(i*0.05)+"s 1 forwards"
             }).appendTo(this.box);
             $(divs).on('click',function(){
                 $(this).css({
-                    'transform':'rotateY(180deg)',
+                    'transform':'rotateY(90deg)',
                     'background':'#bbb'
                 });
             })
